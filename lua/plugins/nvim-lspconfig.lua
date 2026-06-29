@@ -45,6 +45,11 @@ return {
                         },
                     })
                 end,
+                ["prismals"] = function()
+                    vim.lsp.config("prismals", {
+                        capabilities = capabilities,
+                    })
+                end,
             }
         })
     end,

@@ -8,3 +8,18 @@ end
 
 require("config.lazy")
 require("config.default-values")
+
+vim.filetype.add({
+    extension = {
+        prisma = "prisma",
+    },
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "prisma",
+    callback = function(args)
+        pcall(function()
+            require("nvim-treesitter.highlight").attach(args.buf, "prisma")
+        end)
+    end,
+})
