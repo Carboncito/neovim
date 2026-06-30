@@ -5,7 +5,10 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.softtabstop = 2
 
-vim.cmd[[colorscheme tokyonight]]
+vim.opt.signcolumn = "yes"
+
+-- vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme onedark]]
 vim.opt.termguicolors = true
 
 -- nav between tabs

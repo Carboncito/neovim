@@ -1,5 +1,5 @@
 return {
-  require("plugins.copilot"),
+  -- require("plugins.copilot"),
   require("plugins.cmp"),
   {
     "windwp/nvim-ts-autotag",

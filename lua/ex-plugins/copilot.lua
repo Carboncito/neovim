@@ -6,8 +6,8 @@ return {
     config = function()
         require("copilot").setup({
             suggestion = {
-                enabled = true,
-                auto_trigger = true,
+                enabled = false,
+                auto_trigger = false,
                 kaymap = {
                     accept = "<Tab>",
                 }
