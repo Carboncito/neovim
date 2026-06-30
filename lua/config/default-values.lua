@@ -7,6 +7,9 @@ vim.opt.softtabstop = 2
 
 vim.opt.signcolumn = "yes"
 
+-- font
+vim.g.have_nerd_font = true
+
 -- vim.cmd[[colorscheme tokyonight]]
 vim.cmd[[colorscheme onedark]]
 vim.opt.termguicolors = true
