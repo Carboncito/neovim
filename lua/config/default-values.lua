@@ -33,3 +33,6 @@ vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Show line diagnos
 -- Jump to previous/next diagnostic error or warning
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic' })
+
+-- Redraw screen and clean highlight text
+vim.keymap.set("n", "<leader>r", "<cmd>nohlsearch<CR><cmd>redraw!<CR>", { desc = "Redraw screen and clear search highlight" })
