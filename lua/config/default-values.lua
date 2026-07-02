@@ -36,3 +36,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 
 -- Redraw screen and clean highlight text
 vim.keymap.set("n", "<leader>r", "<cmd>nohlsearch<CR><cmd>redraw!<CR>", { desc = "Redraw screen and clear search highlight" })
+
+vim.opt.clipboard = "unnamedplus"
+-- Clear the current sub-terminal buffer using Cmd + K
+vim.keymap.set('t', '<D-k>', [[<C-\><C-n>:lua vim.api.nvim_chan_send(vim.b.terminal_job_id, "\x0c")<CR>]], { silent = true, desc = "Clear sub-terminal screen" })
